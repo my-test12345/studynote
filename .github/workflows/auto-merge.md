@@ -2,7 +2,7 @@ name: Auto Merge PRs
 
 on:
   schedule:
-    - cron: "0 18 * * *"  # 매일 새벽 2시 (GMT 기준, 한국 시간 11시)
+    - cron: "10 18 * * *"  # 매일 새벽 2시 (GMT 기준, 한국 시간 11시)
   workflow_dispatch:  # 수동 실행도 가능
 
 permissions:
@@ -24,4 +24,4 @@ jobs:
         with:
           mergeMethod: "squash"  # (옵션: merge, squash, rebase)
           mergeLabel: ""  # 특정 라벨이 없어도 머지
-          deleteBranch: false  # 머지 후 브랜치 자동 삭제
+          deleteBranch: flase  # 머지 후 브랜치 자동 삭제
