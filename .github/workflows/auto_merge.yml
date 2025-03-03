@@ -1,0 +1,27 @@
+name: Auto Merge PRs
+
+on:
+  schedule:
+    - cron: "0 18 * * *"  # 매일 새벽 2시 (GMT 기준, 한국 시간 11시)
+  workflow_dispatch:  # 수동 실행도 가능
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Auto Merge All PRs
+        uses: pascalgn/automerge-action@v0.15.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          mergeMethod: "squash"  # (옵션: merge, squash, rebase)
+          mergeLabel: ""  # 특정 라벨이 없어도 머지
+          deleteBranch: false  # 머지 후 브랜치 자동 삭제
