@@ -1,0 +1,10 @@
+title: "[정보 공유] 제목을 입력하세요"
+labels: ["Resource"]
+body:
+  - type: textarea
+    id: resource
+    attributes:
+      label: "📚 공유할 정보"
+      description: "유용한 자료를 설명하고 링크를 첨부해주세요."
+    validations:
+      required: true
