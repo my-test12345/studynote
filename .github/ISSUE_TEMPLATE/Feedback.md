@@ -1,0 +1,30 @@
+name: 코드 리뷰 요청
+about: 작성한 코드에 대한 피드백을 요청합니다.
+title: "[리뷰 요청] 코드 제목"
+labels: ["Feedback"]
+assignees: ''
+
+body:
+  - type: textarea
+    id: code_summary
+    attributes:
+      label: 📝 코드 요약
+      description: 작성한 코드의 기능을 간략하게 설명해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🤔 고민한 부분
+      description: 코드 작성 중 어려웠던 점이나 개선이 필요한 부분을 적어주세요.
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: 🛠 원하는 피드백
+      description: 어떤 부분에서 피드백을 받고 싶은지 적어주세요.
+    validations:
+      required: false

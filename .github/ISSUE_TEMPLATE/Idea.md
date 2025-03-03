@@ -1,0 +1,30 @@
+name: 프로젝트 아이디어 제안
+about: 새로운 프로젝트 주제를 제안합니다.
+title: "[프로젝트 제안] 아이디어 제목"
+labels: ["Idea"]
+assignees: ''
+
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 💡 아이디어 설명
+      description: 프로젝트 주제를 간략하게 설명해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 🎯 목표
+      description: 프로젝트를 통해 해결하고 싶은 문제나 목표를 적어주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tech
+    attributes:
+      label: 🛠 필요한 기술
+      description: 프로젝트에서 사용할 기술(예: Python, TensorFlow 등)을 적어주세요.
+    validations:
+      required: false
