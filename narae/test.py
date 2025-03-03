@@ -1,1 +1,2 @@
 print("hie")
+print("hihi")
