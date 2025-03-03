@@ -2,7 +2,7 @@ name: Auto Merge PRs
 
 on:
   schedule:
-    - cron: "30 18 * * *"  # 매일 새벽 2시 (GMT 기준, 한국 시간 11시)
+    - cron: "00 19 * * *"  # 매일 새벽 2시 (GMT 기준, 한국 시간 11시)
   workflow_dispatch:  # 수동 실행도 가능
 
 permissions:
