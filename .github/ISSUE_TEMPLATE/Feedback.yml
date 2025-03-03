@@ -1,8 +1,8 @@
 name: 코드 리뷰 요청
-about: 작성한 코드에 대한 피드백을 요청합니다.
+description: 작성한 코드에 대한 피드백을 요청합니다.
 title: "[리뷰 요청] 코드 제목"
 labels: ["Feedback"]
-assignees: ''
+assignees: 
 
 body:
   - type: textarea

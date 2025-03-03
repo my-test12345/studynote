@@ -1,8 +1,8 @@
 name: 스터디 공유
-about: 공부한 내용을 공유하거나 참고할 자료를 제공하는 공간
+description: 공부한 내용을 공유하거나 참고할 자료를 제공하는 공간
 title: "[스터디] 공유할 내용 제목"
 labels: ["Resource"]
-assignees: ''
+assignees: 
 
 body:
   - type: textarea

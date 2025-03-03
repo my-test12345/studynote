@@ -1,8 +1,8 @@
 name: 버그 리포트
-about: 프로젝트 내에서 발생한 오류 및 해결 필요 사항을 기록
+description: 프로젝트 내에서 발생한 오류 및 해결 필요 사항을 기록
 title: "[버그] 버그 설명 작성"
 labels: ["Bugfix"]
-assignees: ''
+assignees: 
 
 body:
   - type: textarea
