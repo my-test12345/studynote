@@ -1,2 +1,0 @@
-print("heellos")
-print("hihi")
