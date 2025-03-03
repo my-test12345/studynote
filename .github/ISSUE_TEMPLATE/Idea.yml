@@ -2,7 +2,7 @@ name: 프로젝트 아이디어 제안
 description: 새로운 프로젝트 주제를 제안합니다.
 title: "[프로젝트 제안] 아이디어 제목"
 labels: ["Idea"]
-assignees: 
+assignees: []
 
 body:
   - type: textarea
