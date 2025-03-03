@@ -1,0 +1,22 @@
+name: 스터디 공유
+about: 공부한 내용을 공유하거나 참고할 자료를 제공하는 공간
+title: "[스터디] 공유할 내용 제목"
+labels: ["Resource"]
+assignees: ''
+
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: 📖 공유할 내용
+      description: 공부한 내용 또는 공유할 자료를 설명해주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: link
+    attributes:
+      label: 🔗 참고 링크
+      description: 공유할 자료가 있다면 링크를 첨부해주세요.
+    validations:
+      required: false
