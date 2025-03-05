@@ -10,7 +10,7 @@ body:
       required: true
   - type: markdown
     attributes:
-      values: |
+      value: |
         ### 📌 참고 사항
         - 공유할 정보에 대한 추가 설명이 있다면 작성해주세요.
         - 참고할 링크가 있다면 함께 첨부해주세요.
