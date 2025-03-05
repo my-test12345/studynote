@@ -1,10 +1,11 @@
 title: "[정보 공유] 제목을 입력하세요"
 labels: ["Resource"]
 body:
-  - type: textarea
-    id: resource
+  - type: markdown
     attributes:
       label: "📚 공유할 정보"
       description: "유용한 자료를 설명하고 링크를 첨부해주세요."
+      values:
+        placeholder: "공유할 정보를 입력해주세요.\n 링크 예시: [링크 내용](링크 URL)"
     validations:
       required: true
