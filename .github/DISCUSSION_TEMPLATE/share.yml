@@ -1,7 +1,7 @@
 title: "[정보 공유] 제목을 입력하세요"
 labels: ["Resource"]
 body:
-  - type: markdown
+  - type: textarea
     attributes:
       label: "📚 공유할 정보"
       description: "유용한 자료를 설명하고 링크를 첨부해주세요."
@@ -9,3 +9,34 @@ body:
         placeholder: "공유할 정보를 입력해주세요.\n 링크 예시: [링크 내용](링크 URL)"
     validations:
       required: true
+  - type: markdown
+    attributes:
+      values: |
+        ### 📌 참고 사항
+        - 공유할 정보에 대한 추가 설명이 있다면 작성해주세요.
+        - 참고할 링크가 있다면 함께 첨부해주세요.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "🔗 참고 링크"
+      description: "공유할 정보와 관련된 링크를 첨부해주세요."
+      validations:
+        required: false
+  - type: dropdown
+    attributes:
+      label: "🏷 카테고리"
+      description: "공유할 정보의 카테고리를 선택해주세요."
+      options:
+        - "기술"
+        - "커리어"
+        - "자기계발"
+        - "기타"
+      validations:
+        required: true
+  - type: input
+    attributes:
+      label: "📅 마감일"
+      description: "정보 공유의 마감일을 설정해주세요."
+      validations:
+        required: false
