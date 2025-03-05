@@ -5,8 +5,7 @@ body:
     attributes:
       label: "📚 공유할 정보"
       description: "유용한 자료를 설명하고 링크를 첨부해주세요."
-      values:
-        placeholder: "공유할 정보를 입력해주세요.\n 링크 예시: [링크 내용](링크 URL)"
+      placeholder: "공유할 정보를 입력해주세요.\n 링크 예시: [링크 내용](링크 URL)"
     validations:
       required: true
   - type: markdown
@@ -21,8 +20,8 @@ body:
     attributes:
       label: "🔗 참고 링크"
       description: "공유할 정보와 관련된 링크를 첨부해주세요."
-      validations:
-        required: false
+    validations:
+      required: false
   - type: dropdown
     attributes:
       label: "🏷 카테고리"
@@ -32,11 +31,11 @@ body:
         - "커리어"
         - "자기계발"
         - "기타"
-      validations:
-        required: true
+    validations:
+      required: true
   - type: input
     attributes:
       label: "📅 마감일"
       description: "정보 공유의 마감일을 설정해주세요."
-      validations:
-        required: false
+    validations:
+      required: false
